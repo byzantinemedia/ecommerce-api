@@ -14,7 +14,6 @@ process.on('uncaughtException', function uncaughtExceptions(err) {
     console.log(err);
 });
 
-// Move port to config file with env
-var server = app.listen(config.port, function startServer() {
+app.listen(config.port, function startServer() {
     console.log('Server application listening at port %s.', config.port);
 });
